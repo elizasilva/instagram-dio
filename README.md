@@ -1,2 +1,2 @@
 # instagram-dio
- Desenvolver home page do Instagram
+ Recriando a home page do Instagram
