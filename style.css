@@ -1,3 +1,5 @@
+/* CSS com caminho absoluto */
+
 @charset "UTF-8";
 
 * {
@@ -6,7 +8,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: sans-serif;
-    font-size: 14pt;
+    font-size: 12pt;
 }
 
 body {
@@ -19,25 +21,25 @@ body {
     justify-content: center;
 }
 
-.instagram-wrapper {
+div.instagram-wrapper {
     display: flex;
     align-items: center;
     justify-content: start;
     width: 60%;
     height: 100vh;
 }
-.instagram-phone {
+div.instagram-wrapper div.instagram-phone {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
 }
 
-.instagram-phone img {
-    height: 50rem;
+div.instagram-wrapper div.instagram-phone img {
+    height: 45rem;
 }
 
-.instagram-continue {
+div.instagram-wrapper div.instagram-continue {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -45,7 +47,7 @@ body {
     width: 50%;
     min-height: 34rem;
 }
-.group {
+div.instagram-wrapper div.instagram-continue div.group {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,45 +58,47 @@ body {
     border: 1px solid lightgray;
 }
 
-.group:nth-child(1) {
+div.instagram-wrapper div.instagram-continue div.group:nth-child(1) {
     min-height: 19rem;
 }
 
-.instagram-logo {
+div.instagram-wrapper div.instagram-continue div.group div.instagram-logo {
     height: 3rem;
 }
 
-.profile-photo {
+div.instagram-wrapper div.instagram-continue div.group div.profile-photo {
     display: flex;
     justify-content: center;
     border-radius: 50%;
     overflow: hidden;
 }
-.profile-photo img {
+
+div.instagram-wrapper div.instagram-continue div.group div.profile-photo img {
     height: 6rem;
 }
 
-.instagram-login {
+div.instagram-wrapper div.instagram-continue div.group a.instagram-login {
     background-color: #0095f6;
     color: white;
     padding: 8px;
     border-radius: 4px;
 }
 
-.instagram-logout {
+div.instagram-wrapper div.instagram-continue div.group a.instagram-logout {
     color: #0095f6;
     margin-top: 1rem;
 }
 
-.not-account {
+div.instagram-wrapper div.instagram-continue div.group p.not-account {
     color: rgb(160, 160, 160);
 }
 
-.link-blue {
+div.instagram-wrapper div.instagram-continue div.group p.not-account span.link-blue {
     color: #0095f6;
+    font-weight: bold;
 }
 
-.get-the-app {
+div.instagram-wrapper div.instagram-continue div.get-the-app {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -103,7 +107,7 @@ body {
     padding: 1.3rem 0;
 }
 
-.download {
+div.instagram-wrapper div.instagram-continue div.get-the-app div.download {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
@@ -111,25 +115,24 @@ body {
     padding: 1rem;
 }
 
-.app-download {
+div.instagram-wrapper div.instagram-continue div.get-the-app div.download a.app-download {
     height: 3rem;
     width: 10rem;
     background-size: cover;
 }
 
-.app-download:nth-child(1) {
+div.instagram-wrapper div.instagram-continue div.get-the-app div.download a.app-download:nth-child(1) {
     background-image: url('_imagens/apple-button.png');
 }
 
-.app-download:nth-child(2) {
+div.instagram-wrapper div.instagram-continue div.get-the-app div.download a.app-download:nth-child(2) {
     background-image: url('_imagens/googleplay-button.png');
 }
 
 /* RESPONSIVIDADE */
 
-
 @media (max-width: 1024px) {
-    .instagram-wrapper {
+    div.instagram-wrapper {
         width: 90%;
     }
 }
@@ -139,19 +142,19 @@ body {
         background-color: #ffffff;
     }
 
-    .instagram-wrapper {
+    div.instagram-wrapper {
         width: 90%;
     }
 
-    .instagram-phone {
+    div.instagram-wrapper div.instagram-phone {
         display: none;
     }
 
-    .instagram-continue {
+    div.instagram-wrapper div.instagram-continue {
         width: 100%;
     }
     
-    .group {
+    div.instagram-wrapper div.instagram-continue div.group {
         border: 1px solid transparent;
     }
 }
